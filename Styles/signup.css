@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+        background: url(login-bg.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        height:100vh;
+        box-sizing: border-box;
+      
+  }
+
+  .container {
+   width:30%;
+    margin: 5rem auto;
+    background-color: #313234;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color:#dd1246
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color:#dd1246
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    background-color:#dd1246;
+    color: white;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+  }
+
+  button[type="submit"]:hover {
+    font-size: 20px;
+  }
+  .login h4{
+    color:white;
+  }
+  .login a{
+    color:#dd1246
+  }
+
+@media screen and (max-width:1000px){
+    .container{
+        width:50%;
+    }
+}

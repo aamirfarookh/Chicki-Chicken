@@ -1,0 +1,219 @@
+body{
+    padding:0; 
+    margin:0;
+    box-sizing: border-box; 
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:99%;
+    margin:auto;
+    margin-bottom:3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:5px 10px;
+    position: fixed;
+    top:0;
+    /* z-index:99; */
+    background-color: #f4f8f9;
+}
+.nav img{
+    width:18%;
+    border-radius: 100%;
+}
+.nav img:hover{
+    width:20%;
+}
+.nav a{
+    text-decoration: none;
+    color: #dd1246;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.nav a:hover{
+    text-decoration: underline;
+    color:rgb(115, 42, 42);
+}
+.links{
+    display: flex;
+    width:25%;
+    justify-content: space-between;
+}
+.links+div{
+    display: flex;
+    width:36%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav input:nth-child(1){
+    border-radius: 10px;
+    height:2em;
+    width:15em;
+}
+.nav input:nth-child(2){
+    border: none;
+    border-radius:10px;
+    padding:10px;
+    background-color: #dd1246;
+    color:white;
+    font-size: 18px;
+}
+.links a:nth-child(1){
+    color:#481623
+}
+#hamburger{
+    display: none;
+}
+.nav input:nth-child(2):hover,.content-one>div button:hover,.content-two>div button:hover,#learnBtn>button:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.hidden-links{
+    background-color:#f4f8f9;
+    margin:auto;
+    margin-top:8rem;
+    
+    display: none;
+}
+.hidden-links>ul{ 
+    list-style:image("http://www.w3.org/2000/svg");
+    font-size: 1.5em;
+   width:100%;
+    margin: auto;
+}
+.hidden-links li{
+   padding:0.5em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color:#dd1246
+}
+.hidden-links a{
+    color:#dd1246
+}
+.hidden-links li:hover{
+    text-decoration: underline;
+}
+#logout h4>span{
+    color:#dd1246
+}
+.srchSrtFltr{
+    margin: auto;
+    margin-top:6rem;
+    display:flex;
+    justify-content: space-around;
+    width:90%;
+    
+}
+.srchSrtFltr>form>input:nth-child(1){
+    width:10em;
+    padding:5px 10px;
+    border-radius: 10px;
+
+}
+.srchSrtFltr>form>input:nth-child(2){
+    background-color: #dd1246;
+    padding:5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color:white;
+}
+#sort , #filter{
+    width:15em;
+    border-radius: 10px;
+    color:#dd1246;
+    border:none;
+    border:3px solid #dd1246;
+}
+.container{
+    width:90%;
+    margin:1.5em auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+.container>div{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #f4f8f9;
+    text-align: center;
+    padding:1em 2em;
+}
+.container img+h2{
+    color:#dd1246;
+}
+.container img{
+    width:100%;
+    border-radius: 10px;
+}
+.container button{
+    background-color: #dd1246;
+    padding:0.7em;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    font-size: 14px;
+}
+.container button:hover{
+    font-size: 16px;
+}
+#menu-head{
+    text-align: center;
+    color:#dd1246;
+    margin-top:3em;
+    font-size: 2.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+@media screen and (min-width:320px) and (max-width:1000px){
+    .nav form,.nav .links, #sign-in{
+        display: none;
+    }
+    #hamburger{
+        display:inline-flex;
+    }
+    .nav{
+        padding: 2px;
+        justify-content: space-around
+    }
+    .nav img{
+        width:15%;
+    }
+    .nav input:nth-child(2),.content-one>div button,.content-two>div button,#learnBtn>button{
+        font-size: 15px;
+        padding:0.5em 3em;
+    }
+    .visible{
+        display:block;
+        margin-top:5rem;
+        width:100%;
+    }
+    #cartBtn{
+        display: none;
+    }
+    .srchSrtFltr{
+       display: none;
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr)
+    }
+    #logout>h4{
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1000px){
+    .nav img{
+        width:8%;
+    }
+}
+
+/* @media screen and (max-width:599px){
+    .container{
+        grid-template-columns:repeat(1,1fr)
+    }  
+} */
