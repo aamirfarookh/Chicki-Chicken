@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/checkout.css">
+</head>
+<body>
+    <div class="checkout">
+        <h2>Total amount payable:- <span id="total-bill"></span></h2>
+        <form action="">
+            <label for="">SELECT PAYMENT METHOD:-</label>
+            <h3><input type="radio" name="pay" id="cod" value="COD"> COD (Cash on Delivery)</h3>
+            <h3><input type="radio" name="pay" id="card"> Credit/Debit Card</h3>
+           <h3> <input type="radio" name="pay" id="upi"> UPI</h3>
+           <button id="confirm" type="submit">Place your order</button>
+        </form>
+    </div>
+    <div class="alert">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxRVMCr-Y1JPd_xh4euyjPZ8FQ4KnENw4uh6VpcjPIXg&s" alt="">
+        <h1>Your order has been successfully placed</h1>
+        <button>BACK TO HOME PAGE</button>
+    </div>
+</body>
+<script>
+    let clear=[]
+    let total = localStorage.getItem("chicken-cart-total");
+    let displayTotal = document.querySelector("#total-bill");
+    displayTotal.innerText = "$"+total;
+    let confirmBtn = document.getElementById("confirm");
+    let alertDiv = document.querySelector(".alert");
+    let redirectBtn = document.querySelector(".alert>button")
+    confirmBtn.addEventListener("click",()=>{
+        event.preventDefault();
+     alertDiv.classList.add("visible")
+     localStorage.setItem("chicken-cart",JSON.stringify(clear))
+    });
+    redirectBtn.addEventListener("click",()=>{
+       location.href="dashboard.html"
+    })
+    
+</script>
+</html>

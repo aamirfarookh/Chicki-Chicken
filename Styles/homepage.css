@@ -22,6 +22,11 @@ body{
 .nav img{
     width:18%;
     border-radius: 100%;
+    border:1px solid red
+
+}
+.nav svg{
+    border:1px solid red;
 }
 .nav img:hover{
   width:20%;
@@ -397,8 +402,8 @@ body{
         display:inline-flex;
     }
     .nav{
-        padding: 2px;
-        justify-content: space-around
+      flex-wrap: nowrap;
+      flex-direction: row;
     }
     .content-one h1{
         font-size: 30px;
@@ -410,7 +415,7 @@ body{
         font-size: 16px;
     }
     .nav img{
-        width:5%;
+        width:10%;
     }
     .nav input:nth-child(2),.content-one>div button,.content-two>div button,#learnBtn>button{
         font-size: 15px;
@@ -428,7 +433,7 @@ body{
 
 @media screen and (min-width:600px) and (max-width:1000px){
     .nav img{
-        width:8%;
+        width:15%;
     }
 }
 
