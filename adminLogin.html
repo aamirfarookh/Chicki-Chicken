@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHICKI CHICKEN | ADMIN LOGIN</title>
+    <link rel="icon" type="image/x-icon" href="./Icons/favicon.ico">
+    <style>
+         body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Center the login container on the page */
+      .login-container {
+        width: 400px;
+        margin: 4em auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      /* Style the input fields */
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+
+      /* Style the submit button */
+      .login-container input[type="submit"] {
+        width: 100%;
+        background-color: #dd1246;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* Add hover effect for the submit button */
+      .login-container input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Add some spacing and a heading for the page */
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Admin Login</h1>
+        <form action="" >
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <br>
+          <input type="submit" value="Log In">
+        </form>
+      </div>
+</body>
+<script>
+   let loginForm= document.querySelector("form");
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+   loginForm.addEventListener("submit",()=>{
+    event.preventDefault();
+    if(username.value=="Aamir" && password.value=="12345"){
+        location.href="admin_dash.html"
+    }
+    else{
+        alert("OOPS! WRONG CREDENTIALS")
+    }
+       
+   })
+</script>
+</html>

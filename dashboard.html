@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chicki-Chicken|DASHBOARD</title>
+    <title>Chicki-Chicken | DASHBOARD</title>
+    <link rel="icon" type="image/x-icon" href="./Icons/favicon.ico">
     <link rel="stylesheet" href="./Styles/homepage.css" />
     <link href="https://css.gg/sun.css" rel="stylesheet" />
+    
 
     <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -18,7 +20,7 @@
   <body>
     <!-- Navbar Component -->
     <div class="nav">
-      <a href="dashboard.html"><img src="./Icons/logo.png" alt="Chicki-Chicken Logo" /></a>
+      <img src="./Icons/logo.png" alt="Chicki-Chicken Logo" id="logo" />
 
       <div class="links">
         <a href="menu.html">Menu</a><a href="#">Stories</a><a href="#">About</a
@@ -267,8 +269,13 @@
     let user = document.getElementById("username");
     let userName =localStorage.getItem("username");
     user.innerText=userName
+    let logo = document.getElementById("logo");
+    logo.addEventListener("click",()=>{
+      location.href="dashboard.html"
+    })
     hamburger.addEventListener("click",()=>{
-      hiddenLinks.classList.toggle("visible")
+      hiddenLinks.classList.toggle("visible");
+      console.log("OK HAM")
     })
     let logoutBtn = document.getElementById("logoutBtn");
     logoutBtn.addEventListener("click",()=>{

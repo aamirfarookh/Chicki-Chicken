@@ -11,6 +11,10 @@ let sortFilter = document.getElementById("sort");
 let categoryFilter = document.getElementById("filter");
 let searchInput = document.getElementById("search-bar");
 let form = document.querySelector("#form-main");
+let logo = document.getElementById("logo");
+    logo.addEventListener("click",()=>{
+      location.href="dashboard.html"
+    })
 let productData=[];
 let cartData=JSON.parse(localStorage.getItem("chicken-cart"))||[]
 // Buttons functionality hamburger

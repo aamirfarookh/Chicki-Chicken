@@ -40,7 +40,7 @@ label{
     margin: auto;
 }
 .alert{
-    width:500px;
+    width:30%;
     padding:15px;
     box-shadow: 0 0 10px #ccc;
     background-color: #313234;
@@ -64,7 +64,7 @@ label{
     margin: auto; 
 }
 .alert>button:hover{
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: underline;
 }
 .visible{

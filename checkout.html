@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CHICKI CHICKEN | PAYMENT</title>
+    <link rel="icon" type="image/x-icon" href="./Icons/favicon.ico">
     <link rel="stylesheet" href="./Styles/checkout.css">
 </head>
 <body>
@@ -25,6 +26,7 @@
     </div>
 </body>
 <script>
+    let admin_data=JSON.parse(localStorage.getItem("checkout-data"))||[];
     let clear=[]
     let total = localStorage.getItem("chicken-cart-total");
     let displayTotal = document.querySelector("#total-bill");
@@ -35,7 +37,9 @@
     confirmBtn.addEventListener("click",()=>{
         event.preventDefault();
      alertDiv.classList.add("visible")
-     localStorage.setItem("chicken-cart",JSON.stringify(clear))
+     localStorage.setItem("chicken-cart",JSON.stringify(clear));
+     localStorage.setItem("admin-data",admin_data)
+
     });
     redirectBtn.addEventListener("click",()=>{
        location.href="dashboard.html"

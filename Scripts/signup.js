@@ -7,10 +7,7 @@ let signUpData =JSON.parse(localStorage.getItem("Chicken-signup"))||[];
 
 formSubmit.addEventListener("submit",()=>{
    event.preventDefault();
-    if(signUpData.includes(emailInput.value)===true){
-       alert("Already a user!! Please Login")
-    }
-   else if(nameInput.value!==""||emailInput.value!==""||passwordInput.value!=="" ){
+    if(nameInput.value!==""||emailInput.value!==""||passwordInput.value!=="" ){
         let obj ={
             name: nameInput.value,
             email:emailInput.value,

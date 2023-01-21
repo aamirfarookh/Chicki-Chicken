@@ -5,7 +5,9 @@ localStorage.setItem("chicken-cart-total",cartTotal)
 totalDisplay.innerText=cartTotal
 let cartData =JSON.parse(localStorage.getItem("chicken-cart"))||[];
 console.log(cartData)
+let checkout_data=JSON.parse(localStorage.getItem("checkout-data"))||[]
 
+//function displaying cart data
 function Display(data){
     container.innerHTML="";
     data.forEach((ele,index)=>{
@@ -51,7 +53,7 @@ function Display(data){
         removeBtn.innerText="Remove"
         removeBtn.addEventListener("click",()=>{
             let removed = data.filter((e,i)=>{
-                if(i!==index){
+                if(i===index){
                     cartTotal -= Number(e.price);
                     totalDisplay.innerText = cartTotal
                     localStorage.setItem("chicken-cart-total",cartTotal)
@@ -67,5 +69,21 @@ function Display(data){
         container.append(card)
     })
 }
+
+let orderCount=1;
+function addToAdmin(){
+    cartData.forEach((el,i)=>{
+        let obj={
+         id : orderCount,
+         name:localStorage.getItem("username"),
+         foodName:el.name,
+         price:el.price,
+        }
+        checkout_data.push(obj)
+        localStorage.setItem("checkout-data",JSON.stringify(checkout_data));
+        orderCount++
+    });
+}
+addToAdmin()
 
 Display(cartData)
