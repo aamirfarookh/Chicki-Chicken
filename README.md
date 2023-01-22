@@ -14,3 +14,12 @@ LIVE DEMO:- https://starlit-gaufre-638883.netlify.app/
 <hr>
 The Flow of the web app is as follows
 ![work flow of project](https://user-images.githubusercontent.com/107558641/212994687-1bc3fbeb-d2c3-467f-99d3-c07665577f7c.png)
+<hr>
+<ul>
+  <li><a href="#">LANDING PAGE</a></li>
+  <li><a href="#">LOGIN/SIGNUP</a></li>
+  <li><a href="#">PRODUCT PAGE</a></li>
+  <li><a href="#">CART PAGE</a></li>
+  <li><a href="#">PAYMENT PAGE</a></li>
+  <li><a href="#">ADMIN DASHBOARD</a></li>
+</ul>
