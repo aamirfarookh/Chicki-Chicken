@@ -67,6 +67,7 @@ function Display(data){
             if(i===index){
                 if(cartData.includes(ele)===false){
                     cartData.push(ele);
+                    alert("Product added to cart")
                     return true
                     
                 }else{
