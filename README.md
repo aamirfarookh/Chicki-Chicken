@@ -1,8 +1,13 @@
 # Chicki'-Chicken
+
 This web-app is a restaurant app which deals mainly in chicken based fast foods. 
+
 Features: Local Sign-in/Sign-up. Responsive Design. Functional User Interface. User Dashboard. Menu(Using API). Cart. Checkout. Admin Login. Admin Dashboard
-Tech Stack: HTML | CSS | Javascript | Bootstrap
+
+Tech Stack: HTML | CSS | Javascript
+
 Areas Of Responsibility: Worked closely to optimize and implement the frontend. Set deadlines and project milestones for different issues and tasks. Authenticated payment system. Developed a responsive website for all screen sizes.
+
 An individual project built and executed in 5 days.
 LIVE DEMO:- https://starlit-gaufre-638883.netlify.app/
 
