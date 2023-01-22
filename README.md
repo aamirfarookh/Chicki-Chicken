@@ -1,10 +1,8 @@
 # Chicki'-Chicken
-<hr>
 This web-app is a restaurant app which deals mainly in chicken based fast foods. 
-
+<hr>
 
 Features: Local Sign-in/Sign-up. Responsive Design. Functional User Interface. User Dashboard. Menu(Using API). Cart. Checkout. Admin Login. Admin Dashboard
-
 
 Tech Stack: HTML | CSS | Javascript
 
