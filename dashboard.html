@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chicki-Chicken|HOME</title>
+    <title>Chicki-Chicken|DASHBOARD</title>
     <link rel="stylesheet" href="./Styles/homepage.css" />
     <link href="https://css.gg/sun.css" rel="stylesheet" />
 
@@ -18,17 +18,15 @@
   <body>
     <!-- Navbar Component -->
     <div class="nav">
-      <a href="index.html"><img src="./Icons/logo.png" alt="Chicki-Chicken Logo" /></a>
+      <a href="dashboard.html"><img src="./Icons/logo.png" alt="Chicki-Chicken Logo" /></a>
+
       <div class="links">
-        <a href="#">Stories</a><a href="#">About</a
+        <a href="menu.html">Menu</a><a href="#">Stories</a><a href="#">About</a
         ><a href="">Careers</a>
       </div>
-      <div>
-        <a href="login.html" id="sign-in">Chicki-Chicken (Sign In)</a>
-        <form action="">
-          <input type="text" placeholder="Search Products" />
-          <input type="submit" value="Search" />
-        </form>
+      <div id="logout">
+       <h5>Welcome,  <span id="username"></span></h4>
+       <button style="padding:5px;background-color:#dd1246;font-size: 16px;border: none;color:white;border-radius: 10px;" id="logoutBtn">LOGOUT</button>
       </div>
       <div id="hamburger">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -43,10 +41,11 @@
 
     <div class="hidden-links">
       <ul>
+        <li><a href="menu.html"></a>Menu</li>
         <li><a href="#"></a>About</li>
         <li><a href="#"></a>Stories</li>
         <li><a href="#"></a>Careers</li>
-        <li><a href="login.html">LOG IN</a></li>
+        <li><a href="#" id="logoutLink">LOG OUT</a></li>
       </ul>
     </div>
 
@@ -264,9 +263,22 @@
 
   <script>
     let hamburger = document.getElementById("hamburger");
-    let hiddenLinks = document.querySelector(".hidden-links")
+    let hiddenLinks = document.querySelector(".hidden-links");
+    let user = document.getElementById("username");
+    let userName =localStorage.getItem("username");
+    user.innerText=userName
     hamburger.addEventListener("click",()=>{
       hiddenLinks.classList.toggle("visible")
+    })
+    let logoutBtn = document.getElementById("logoutBtn");
+    logoutBtn.addEventListener("click",()=>{
+        confirm("Are you sure you want to logout");
+        location.href="index.html"
+    })
+    let logoutLink = document.getElementById("logoutLink");
+    logoutLink.addEventListener("click",()=>{
+        alert("LOGOUT SUCCESSFUL");
+        location.href="index.html"
     })
   </script>
 </html>
