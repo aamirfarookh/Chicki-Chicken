@@ -1,4 +1,5 @@
 <h1> Chicki'-Chicken </h1>
+<img src="./Icons/logo.png" alt="Chicki-Chicken Logo" id="logo"/>
 This web-app is a restaurant app which deals mainly in chicken based fast foods. 
 <hr>
 
