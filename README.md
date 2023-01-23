@@ -17,12 +17,12 @@ The Flow of the web app is as follows
 <hr>
 These are some of the screenshots of the project:-
 <ul>
-  <li><img src="./screenshots/Chicki Chicken Landing page ss.png"/>LANDING PAGE</img></li>
-  <li><img src=".\screenshots\Login ss.png"/>LOGIN/SIGNUP</li>
-  <li><img src=".\screenshots\MENU SS.png"/>PRODUCT PAGE</li>
-  <li><img src=".\screenshots\CART CSS.png"/>CART PAGE</li>
-  <li><img src=".\screenshots\CHECKOUT SS.png"/>PAYMENT PAGE</li>
-  <li><img src=".\screenshots\Payment.png"/>PAYMENT DONE</li>
-  <li><img src=".\screenshots\admin-dash.png"/>ADMIN DASHBOARD</li>
+  <li><img src="./screenshots/Chicki Chicken Landing page ss.png"/>LANDING PAGE</li>
+  <li><img src="./screenshots/Login ss.png"/>LOGIN/SIGNUP</li>
+  <li><img src="./screenshots/MENU SS.png"/>PRODUCT PAGE</li>
+  <li><img src="./screenshots/CART CSS.png"/>CART PAGE</li>
+  <li><img src="./screenshots/CHECKOUT SS.png"/>PAYMENT PAGE</li>
+  <li><img src="./screenshots/Payment.png"/>PAYMENT DONE</li>
+  <li><img src="./screenshots/admin-dash.png"/>ADMIN DASHBOARD</li>
 
 </ul>
