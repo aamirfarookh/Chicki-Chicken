@@ -16,6 +16,8 @@ The Flow of the web app is as follows
 ![work flow of project](https://user-images.githubusercontent.com/107558641/212994687-1bc3fbeb-d2c3-467f-99d3-c07665577f7c.png)
 <hr>
 These are some of the screenshots of the project:-
+
+<img src="./screenshots/Chicki Chicken Landing page ss.png"/>
 <ul>
   <li><img src="./screenshots/Chicki Chicken Landing page ss.png"/>LANDING PAGE</li>
   <li><img src="./screenshots/Login ss.png"/>LOGIN/SIGNUP</li>
