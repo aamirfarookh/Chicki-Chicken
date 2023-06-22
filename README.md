@@ -15,9 +15,6 @@ An individual project built and executed in 5 days.
 
 LIVE DEMO:- https://starlit-gaufre-638883.netlify.app/
 <hr>
-The Flow of the web app is as follows
-![work flow of project](https://user-images.githubusercontent.com/107558641/212994687-1bc3fbeb-d2c3-467f-99d3-c07665577f7c.png)
-<hr>
 These are some of the screenshots of the project:-
 
 <img src="./screenshots/Chicki Chicken Landing page ss.png"/>
